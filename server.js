@@ -23,12 +23,9 @@ const io = require('socket.io')(http)
 
 io.on('connection', (socket) => {
     console.log('Socket Connected...');
+    
     socket.on('message', (msg) => {
         console.log(msg);
         socket.broadcast.emit('message', msg)
     })
 })
-
-
-
-

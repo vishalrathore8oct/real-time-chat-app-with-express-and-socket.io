@@ -12,7 +12,6 @@ do {
 textArea.addEventListener('keyup', (e) => {
     if (e.key == 'Enter') {
         sendMessage(e.target.value)
-        
     }
 })
 
